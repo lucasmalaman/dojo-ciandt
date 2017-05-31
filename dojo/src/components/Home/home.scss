@@ -4,6 +4,7 @@ body {
 
   @media (width: 650px) {
     background: red;
+
   }
 
 
@@ -14,6 +15,7 @@ body {
     width: 400px;
     margin: 0 auto;
   }
+
   height: 700px;
   position: relative;
   width: 100%;
@@ -32,6 +34,10 @@ body {
     flex-grow: 9;
     display: flex;
     flex-direction: row;
+
+      @media (max-width: 450px) {
+        flex-direction: column;
+      }
     &__sidebar {
       flex-grow: 1;
     }
