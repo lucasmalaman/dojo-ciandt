@@ -35,6 +35,10 @@ body {
     display: flex;
     flex-direction: row;
 
+    @media only screen and (orientation: portrait) {
+      flex-direction: column;
+    }
+
     &__sidebar {
       flex-grow: 1;
     }
