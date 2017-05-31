@@ -13,7 +13,7 @@
     <div class="container__main">
 
       <div class="container__main__sidebar">
-        SIDEBAR
+        SIDEBAR 
       </div>
 
       <div class="container__main__content">
