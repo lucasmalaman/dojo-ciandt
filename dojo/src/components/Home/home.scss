@@ -35,9 +35,6 @@ body {
     display: flex;
     flex-direction: row;
 
-      @media (max-width: 450px) {
-        flex-direction: column;
-      }
     &__sidebar {
       flex-grow: 1;
     }

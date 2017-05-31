@@ -50,25 +50,6 @@ body {
       flex-grow: 10;
 
       &__button_container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-
-          @media only screen and (max-width: 320px) {
-            button {
-              font-size:14px;
-            	font-weight:bold;
-            	padding: 10px 45px;
-            }
-          }
-          @media only screen and (min-width: 375px) and (max-width: 667px) {
-            button {
-              font-size:18px;
-            	font-weight:bold;
-            	padding:10px 50px;
-            }
-          }
 
       }
     }
