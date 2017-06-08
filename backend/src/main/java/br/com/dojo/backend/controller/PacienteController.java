@@ -14,7 +14,7 @@ import com.google.common.base.Preconditions;
 import br.com.dojo.backend.model.Paciente;
 import br.com.dojo.backend.services.PacienteService;
 
-@RestController("/pacientes")
+@RestController()
 @RequestMapping("/pacientes")
 public class PacienteController {
 	
