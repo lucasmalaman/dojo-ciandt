@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    DOJO
+    <router-view></router-view>
   </div>
 </template>
 
@@ -8,6 +8,4 @@
   export default {
     name: 'app'
   }
-
-
 </script>
