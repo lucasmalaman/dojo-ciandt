@@ -2,14 +2,14 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
-// import Axios from 'axios'
-import VueResource from 'vue-resource'
+import Axios from 'axios'
+// import VueResource from 'vue-resource'
 
 Vue.config.productionTip = false
 
-Vue.use(VueResource)
+// Vue.use(VueResource)
 
-// Vue.prototype.$http = Axios
+Vue.prototype.$http = Axios
 // Axios.defaults.baseURL = process.env.API_URL
 
 /* eslint-disable no-new */
