@@ -1,6 +1,6 @@
 .container {
   width: 98%;
-  height: 85%;
+  height: 80%;
   margin: 0 auto;
   border: 2px solid black;
   display: flex;
@@ -39,6 +39,7 @@
   }
 
   &__content {
+    height: 100%;
     flex-grow: 10;
     padding: 15px;
   }

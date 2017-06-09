@@ -1,41 +1,36 @@
 <template lang="html">
   <div class="">
-    <internal-page ref="bla">
-      <div class="">
-        <div class="form">
+    <div class="form">
 
-          <div class="form__field">
-            <label>Códgio: </label>
-            <input type="text" v-model="user.codigo">
-          </div>
-
-          <div class="form__field">
-            <label>Nome: </label>
-            <input type="text" v-model="user.nome">
-          </div>
-
-          <div class="form__field">
-            <label>Sobrenome: </label>
-            <input type="text" v-model="user.sobrenome">
-          </div>
-
-          <div class="form__field">
-            <label>Idade: </label>
-            <input type="text" v-model="user.idade">
-          </div>
-
-          <div class="form__field">
-            <label>Data Nascimento: </label>
-            <input type="text" v-model="user.dataNascimento">
-          </div>
-
-        </div>
-
-        <button @click="salvar">Salvar</button>
-
+      <div class="form__field">
+        <label>Códgio: </label>
+        <input type="text" v-model="user.codigo">
       </div>
 
-    </internal-page>
+      <div class="form__field">
+        <label>Nome: </label>
+        <input type="text" v-model="user.nome">
+      </div>
+
+      <div class="form__field">
+        <label>Sobrenome: </label>
+        <input type="text" v-model="user.sobrenome">
+      </div>
+
+      <div class="form__field">
+        <label>Idade: </label>
+        <input type="text" v-model="user.idade">
+      </div>
+
+      <div class="form__field">
+        <label>Data Nascimento: </label>
+        <input type="text" v-model="user.dataNascimento">
+      </div>
+
+    </div>
+
+    <button @click="salvar">Salvar</button>
+
   </div>
 </template>
 
@@ -68,7 +63,7 @@
           })
       },
       incrementar() {
-        this.$refs.bla.qtdPacientes++
+        this.$emit('incrementar')
       },
       limparDados() {
         this.user.nome = ''

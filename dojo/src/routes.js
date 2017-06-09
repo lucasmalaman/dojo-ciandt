@@ -2,12 +2,31 @@ import Home from '@/app/modules/Home'
 import Listar from '@/app/modules/Paciente/Listar'
 import Cadastro from '@/app/modules/Paciente/Cadastro'
 import Erro from '@/app/modules/Erro'
+import Teste from '@/app/modules/Teste'
 
 const router = [
   {
     path: '/home',
     name: 'home',
-    component: Home
+    components: {
+      'default': Home
+    },
+    children: [
+      {
+        path: '/home',
+        name: 'home-listar',
+        components: {
+          'listar': Listar
+        }
+      },
+      {
+        path: 'cadastro',
+        name: 'home-cadastro',
+        components: {
+          'cadastro': Cadastro
+        }
+      }
+    ]
   },
   {
     path: '/home/listar',

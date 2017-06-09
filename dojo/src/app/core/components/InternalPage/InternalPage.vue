@@ -47,10 +47,10 @@
     },
     methods: {
       goToListar() {
-        this.$router.push({name: 'listar'})
+        this.$router.push({name: 'home-listar'})
       },
       goToCadastro() {
-        this.$router.push({name: 'cadastro'})
+        this.$router.push({name: 'home-cadastro'})
       }
     }
   }
